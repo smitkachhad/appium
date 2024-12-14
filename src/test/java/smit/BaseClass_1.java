@@ -59,14 +59,14 @@ public class BaseClass_1 {
     }
 
 
-    //UI sutomator scroll
+    //UI sutomator scroll || when we know the word till where we have to scroll
     public void uiSccroll(String ele)
     {
         driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text("+ele+"))"));
 
     }
 
-    //scroll action javascript
+    //scroll action javascript || javascript method where we don't have idea till where we have to scroll
     public void scrollAct()
     {
         boolean canScrollMore;
