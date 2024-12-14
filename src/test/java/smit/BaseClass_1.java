@@ -81,6 +81,18 @@ public class BaseClass_1 {
         }
 
 
+
+        //swipe
+    public void swipe(WebElement element,String motion)
+    {
+        ((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
+                "elementId", ((RemoteWebElement) element).getId(),
+                "direction", motion,
+                "percent", 0.25
+        ));
+    }
+
+
     @AfterClass
     public void tearDown()
     {
