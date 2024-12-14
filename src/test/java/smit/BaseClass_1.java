@@ -92,6 +92,16 @@ public class BaseClass_1 {
         ));
     }
 
+    //drag_drop
+    public void dragDrop(WebElement element,int x,int y)
+    {
+        ((JavascriptExecutor) driver).executeScript("mobile: dragGesture", ImmutableMap.of(
+                "elementId", ((RemoteWebElement) element).getId(),
+                "endX", x,
+                "endY", y
+        ));
+    }
+
 
     @AfterClass
     public void tearDown()
