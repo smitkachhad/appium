@@ -35,7 +35,10 @@ public class BaseClass_1 {
         //create object of uiautomator to intract with android device
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("Pixel");
-        options.setApp("//Users//smitk//IdeaProjects//Appium_u//appium_basic//src//test//java//resources//ApiDemos-debug.apk");
+        //options.setApp("//Users//smitk//IdeaProjects//Appium_u//appium_basic//src//test//java//resources//ApiDemos-debug.apk");
+
+        options.setApp("//Users//smitk//IdeaProjects//Appium_u//appium_basic//src//test//java//resources//General-Store.apk");
+
 
         //options.setApp("/Users/smitk/IdeaProjects/Appium_u/appium_basic/src/test/java/resources/ApiDemos-debug.apk");
 
